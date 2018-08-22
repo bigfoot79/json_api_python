@@ -2,12 +2,6 @@
 import json
 # imports the requests module
 import requests
-# from the sys module, imports the argv function
-from sys import argv
-
-# sets the argv variables for when the script is loaded.  The script variable is set automatically
-# the end_point variable is the url endpoint for the json data
-script, end_point = argv
 
 def get_api(url):
     """ Returns the url endpoint data as a list of dictionaries
@@ -24,10 +18,10 @@ def get_api(url):
 
     return json.loads(response.text)
 
-print(get_api(end_point))
+# print(get_api(end_point))
 
-print(len(get_api(end_point)))
+# print(len(get_api(end_point)))
 
-print(type(get_api(end_point)))
+# print(type(get_api(end_point)))
 
-print(get_api(end_point)[0])
+# print(get_api(end_point)[0])
