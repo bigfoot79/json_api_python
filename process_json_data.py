@@ -8,7 +8,4 @@ from api_call import get_api
 script, end_point = argv
 
 # passess the end_point argv variable to the get_api function
-dict = get_api(end_point)[0]
-
-print(type(dict))
-print(type(dict.values()))
+print(get_api(end_point))
