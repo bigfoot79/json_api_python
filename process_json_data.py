@@ -6,6 +6,7 @@ from api_call import get_api
 # sets the argv variables for when the script is loaded.  The script variable is set automatically
 # the end_point variable is the url endpoint for the json data
 script, end_point = argv
-
+# "https://jsonplaceholder.typicode.com/todos" - url end point for api resource
 # passess the end_point argv variable to the get_api function
-print(get_api(end_point))
+api_content = get_api(end_point)
+dict = api_content

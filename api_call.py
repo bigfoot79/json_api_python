@@ -5,7 +5,7 @@ import requests
 
 def get_api(url):
     """ Returns the url endpoint data as a list of dictionaries
-        which represent the json data in key value pairs
+        which represent the json data in key value pairs.
 
         The argument is the url for the endpoint.  This is parsed
         through argv on running the script itself.
@@ -17,11 +17,3 @@ def get_api(url):
     response = requests.get(url)
 
     return json.loads(response.text)
-
-# print(get_api(end_point))
-
-# print(len(get_api(end_point)))
-
-# print(type(get_api(end_point)))
-
-# print(get_api(end_point)[0])
