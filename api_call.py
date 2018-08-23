@@ -14,6 +14,7 @@ def get_api(url):
         Uses the json.loads function to convert the raw data into a
         list of dictionaries.
     """
+    # retrieves the url resource
     response = requests.get(url)
-
+    # returns a list of dictionaries-url resource
     return json.loads(response.text)
