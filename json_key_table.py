@@ -7,10 +7,10 @@ from api_call import get_api
 # the end_point variable is the url endpoint for the json data
 script, end_point = argv
 # "https://jsonplaceholder.typicode.com/todos" - url end point for the api resource
+# passess the end_point argv variable to the get_api function
 
-# api_content is a list of dictionaries which contain the json key value pairs
 api_content = get_api(end_point)
 
 dictionary = api_content[0]
-print(type([*dictionary]))
-print([*dictionary][0])
+list_keys = ([*dictionary])
+print(list_keys)
